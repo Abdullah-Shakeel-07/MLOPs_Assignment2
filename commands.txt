@@ -1,0 +1,10 @@
+Here are the steps: 
+Create a Flask app 
+Confirm the flask app can run
+->Add a Dockerfile to the src dir 
+->Run command from terminal: docker image build -t docker-flask-test . (don’t miss the last . docker-flask-test is the name of file) 
+->Run command: docker run -p 5000:5000 -d docker-flask-test
+Note: we are binding the host port 5000 to the container port 5000. We are also running in detached mode so the terminal shows up in separate window and naming the container. 
+You will see the container ID appear, you can see the logs by typing in: docker container logs [Image ID]
+->docker container stop [ID] will stop the container 
+docker system prune will remove any stopped containers, unused volumes and networks, and dangling images.
