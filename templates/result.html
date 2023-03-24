@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results</title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Results</h1>
+    <table>
+      <tr>
+        <th>Input 1</th>
+        <th>Input 2</th>
+        <th>Input 3</th>
+        <th>Input 4</th>
+        <th>Output</th>
+      </tr>
+      <tr>
+        <td>{{ input1 }}</td>
+        <td>{{ input2 }}</td>
+        <td>{{ input3 }}</td>
+        <td>{{ input4 }}</td>
+        <td>{{ output }}</td>
+      </tr>
+    </table>
+  </body>
+</html>
